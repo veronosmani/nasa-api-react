@@ -4,7 +4,7 @@ import example from '../assets/example.jpg'
 export default function Main() {
   return (
     <div>
-        <img src={example}
+        <img src={example} />
     </div>
   )
 }
