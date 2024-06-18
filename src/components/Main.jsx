@@ -1,10 +1,8 @@
-import React from 'react'
-import example from '../assets/example.jpg'
-
-export default function Main() {
-  return (
-    <div>
-        <img src={example} />
-    </div>
-  )
+export default function Main(props) {
+    const { data } = props
+    return (
+        <div className="imgContainer">
+            <img src={data.hdurl} alt={data.title || 'bg-img'} className="bgImage" />
+        </div>
+    )
 }
